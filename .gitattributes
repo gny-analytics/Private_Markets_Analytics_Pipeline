@@ -1,0 +1,22 @@
+# GitHub Linguist directives
+# https://github.com/github-linguist/linguist/blob/main/docs/overrides.md
+#
+# Goal: have GitHub correctly identify this as a SQL/dbt project rather than
+# defaulting to HTML (because of the large auto-generated SELF_STUDY_GUIDE.html).
+
+# The HTML self-study guide is auto-generated from SELF_STUDY_GUIDE.md via pandoc.
+# Mark it as generated so Linguist excludes it from language statistics and
+# collapses it in diffs by default.
+PitchbookDeck_and_deliverables/SELF_STUDY_GUIDE.html linguist-generated=true
+
+# CSVs are data, not source code — explicitly mark as such (Linguist usually
+# handles this, but we make it explicit for clarity)
+OLTP_SourceDataset_as_xlsx_csv/csv/*.csv linguist-detectable=false
+
+# Office formats (pptx, pdf, xlsx) — vendor binary documents, exclude from stats
+*.pptx linguist-detectable=false
+*.pdf  linguist-detectable=false
+*.xlsx linguist-detectable=false
+
+# Default line-ending normalization (avoids CRLF/LF churn between Windows and *nix)
+* text=auto
