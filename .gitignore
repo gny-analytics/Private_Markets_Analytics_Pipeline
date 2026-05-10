@@ -1,0 +1,34 @@
+# dbt build output and caches
+dbt_private_markets/target/
+dbt_private_markets/dbt_packages/
+dbt_private_markets/logs/
+dbt_private_markets/.user.yml
+
+# dbt profiles file (contains connection info — never commit)
+profiles.yml
+
+# SSMS / Visual Studio per-user metadata
+.vs/
+*.suo
+*.ssms_suo
+
+# Power BI files (intentionally not versioned — see README)
+*.pbix
+*.pbix.bak
+.pbiviz.json
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Editor swap files
+*.swp
+*~
+.vscode/
+.idea/
+
+# Python venv if anyone adds one for dbt
+venv/
+.venv/
+__pycache__/
+*.pyc

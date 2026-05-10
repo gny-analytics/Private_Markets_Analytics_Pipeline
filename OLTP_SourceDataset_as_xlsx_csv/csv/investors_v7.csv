@@ -1,0 +1,12 @@
+﻿InvestorID,InvestorCode,InvestorName,InvestorType,InvestorChannel,Region,Country,BaseCurrency,CommitmentBucket,RelationshipStartYear,OnboardingOffice,ESGPreference,TaxStatus,InvestorStatus
+1,SPR,Swiss Pension Reserve,Pension Fund,Institutional,Europe,Switzerland,CHF,Large,2012,Geneva,Yes,Tax-Exempt,Active
+2,NIG,Nordic Insurance Group,Insurance,Institutional,Europe,Sweden,EUR,Large,2013,Stockholm,Yes,Taxable,Active
+3,GSIA,Gulf Sovereign Investment Authority,Sovereign Wealth Fund,Institutional,Middle East,UAE,USD,Large,2015,Dubai,No,Tax-Exempt,Active
+4,CPP,Canadian Public Pension,Pension Fund,Institutional,North America,Canada,CAD,Large,2014,Toronto,Yes,Tax-Exempt,Active
+5,UKPBF,UK Private Bank Feeder,Private Bank Feeder,Private Wealth,Europe,United Kingdom,GBP,Medium,2016,London,Yes,Taxable,Active
+6,SPBAM,Swiss Private Bank Advisory Mandate,Private Bank Advisory Mandate,Private Wealth,Europe,Switzerland,CHF,Medium,2015,Geneva,Yes,Taxable,Active
+7,AIP,Asia Insurance Platform,Insurance,Institutional,Asia,Singapore,USD,Large,2016,Singapore,Yes,Taxable,Active
+8,UUE,US University Endowment,Endowment,Institutional,North America,United States,USD,Medium,2014,Boston,Yes,Tax-Exempt,Active
+9,EIG,European Insurance Group,Insurance,Institutional,Europe,Germany,EUR,Medium,2013,Frankfurt,Yes,Taxable,Active
+10,GPCF,Geneva Private Clients Feeder,Private Client Feeder,Private Wealth,Europe,Switzerland,CHF,Small,2016,Geneva,Yes,Taxable,Active
+11,MCV,Manager Commitment Vehicle,GP / Affiliate,GP,Europe,Switzerland,EUR,Small,2011,Geneva,Yes,Taxable,Active

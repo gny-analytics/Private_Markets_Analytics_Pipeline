@@ -1,0 +1,27 @@
+# profiles.example.yml
+#
+# This is a TEMPLATE — copy this file to your local dbt profiles location:
+#   Windows: C:\Users\<you>\.dbt\profiles.yml
+#   macOS / Linux: ~/.dbt/profiles.yml
+#
+# Then edit the `server` line to point at your own SQL Server instance.
+#
+# This project uses Windows Authentication by default (no password in config).
+# If you need SQL auth, replace `windows_login: true` with `user: <name>` + `password: <pwd>`.
+#
+# After editing, run `dbt debug` from the dbt_private_markets/ folder to verify
+# the connection works.
+
+dbt_private_markets:
+  target: dev
+  outputs:
+    dev:
+      type: sqlserver
+      driver: "ODBC Driver 17 for SQL Server"
+      server: "YOUR_SERVER_NAME\\YOUR_INSTANCE"   # e.g. "SOSA\\SQLEXPRESS"
+      port: 1433
+      database: "PrivateMarkets"
+      schema: "staging"
+      windows_login: true
+      encrypt: true
+      trust_cert: true
